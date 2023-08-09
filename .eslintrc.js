@@ -46,6 +46,7 @@ module.exports = defineConfig({
 
   // 在已有规则及基础上微调修改
   rules: {
+    'import/no-relative-packages': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
 

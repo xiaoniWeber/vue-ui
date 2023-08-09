@@ -23,12 +23,12 @@
   },
   "main": "./dist/uiku-button.umd.js",
   "module": "./dist/uiku-button.mjs",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/uiku-button.umd.js",
-      "module": "./dist/uiku-button.mjs",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/uiku-button.mjs",
+      "types": "./dist/src/index.d.ts"
     }
   },
   "files": [

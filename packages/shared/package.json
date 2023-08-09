@@ -2,12 +2,12 @@
   "name": "@uiku/shared",
   "main": "./dist/uiku-shared.umd.js",
   "module": "./dist/uiku-shared.mjs",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/uiku-shared.mjs",
       "require": "./dist/uiku-shared.umd.js",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/uiku-shared.mjs",
+      "types": "./dist/src/index.d.ts"
     }
   },
   "scripts": {

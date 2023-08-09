@@ -1,0 +1,33 @@
+{
+  "name": "@uiku/build",
+  "main": "./dist/uiku-build.umd.js",
+  "module": "./dist/uiku-build.mjs",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/uiku-build.umd.js",
+      "import": "./dist/uiku-build.mjs",
+      "types": "./dist/src/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "echo dev",
+    "build": "vite build"
+  },
+  "peerDependencies": {
+    "vite": ">=3.0.0",
+    "vue": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@rollup/plugin-replace": "^5.0.2",
+    "rollup-plugin-visualizer": "^5.9.2",
+    "type-fest": "^4.2.0",
+    "typescript": "^5.1.6",
+    "vite-plugin-inspect": "^0.7.35"
+  }
+}

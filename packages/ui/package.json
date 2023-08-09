@@ -1,24 +1,25 @@
-
-  {
-    "name": "@uiku/ui",
-    "main": "./dist/uiku-ui.umd.js",
-    "module": "./dist/uiku-ui.mjs",
-    "types": "./dist/index.d.ts",
-    "exports": {
-      ".": {
-        "import": "./dist/uiku-ui.mjs",
-        "require": "./dist/uiku-ui.umd.js",
-        "types": "./dist/index.d.ts"
-      }
-    },
-    "scripts": {
-      "dev": "echo dev",
-      "build": "vite build"
-    },
-    "dependencies": {
-        "@uiku/button": "workspace:^",
-        "@uiku/shared": "workspace:^",
-        "@uiku/input": "workspace:^"
-      }
-   
+{
+  "name": "@uiku/ui",
+  "main": "./dist/uiku-ui.umd.js",
+  "module": "./dist/uiku-ui.mjs",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/uiku-ui.umd.js",
+      "import": "./dist/uiku-ui.mjs",
+      "types": "./dist/src/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "echo dev",
+    "build:package": "vite build --mode package",
+    "build:full": "vite build --mode full",
+    "build:full-min": "vite build --mode full-min",
+    "build": "pnpm run build:package && pnpm run build:full && pnpm run build:full-min"
+  },
+  "dependencies": {
+    "@uiku/button": "workspace:^",
+    "@uiku/shared": "workspace:^",
+    "@uiku/input": "workspace:^"
   }
+}

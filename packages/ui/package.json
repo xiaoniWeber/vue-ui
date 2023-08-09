@@ -1,0 +1,24 @@
+
+  {
+    "name": "@uiku/ui",
+    "main": "./dist/uiku-ui.umd.js",
+    "module": "./dist/uiku-ui.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+      ".": {
+        "import": "./dist/uiku-ui.mjs",
+        "require": "./dist/uiku-ui.umd.js",
+        "types": "./dist/index.d.ts"
+      }
+    },
+    "scripts": {
+      "dev": "echo dev",
+      "build": "vite build"
+    },
+    "dependencies": {
+        "@uiku/button": "workspace:^",
+        "@uiku/shared": "workspace:^",
+        "@uiku/input": "workspace:^"
+      }
+   
+  }

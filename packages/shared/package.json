@@ -1,0 +1,26 @@
+{
+  "name": "@uiku/shared",
+  "main": "./dist/uiku-shared.umd.js",
+  "module": "./dist/uiku-shared.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/uiku-shared.mjs",
+      "require": "./dist/uiku-shared.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "echo dev",
+    "build": "vite build"
+  },
+
+
+
+
+  
+  "dependencies": {
+    "@types/lodash": "^4.14.196",
+    "lodash": "^4.17.21"
+  }
+}

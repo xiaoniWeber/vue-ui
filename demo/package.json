@@ -1,0 +1,12 @@
+{
+    "name": "@uiku/demo",
+    "private": true,
+    "scripts": {
+      "dev": "vite dev"
+    },
+    "dependencies": {
+      "@uiku/ui": "workspace:^"
+    },
+    "devDependencies": {
+    }
+  }

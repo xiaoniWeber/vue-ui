@@ -17,7 +17,10 @@ function clickHandler() {
 </script>
 
 <template>
-  <button class="test-class" @click="clickHandler">
+  <button
+    class="test-class"
+    @click="clickHandler"
+  >
     <slot />
   </button>
 </template>
@@ -26,6 +29,7 @@ function clickHandler() {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  height: 10px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 500;
